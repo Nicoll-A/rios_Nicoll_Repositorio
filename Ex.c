@@ -11,6 +11,11 @@ int main() {
 	printf("/");
 	scanf_s("%d", &any);
 
-	printf("\n%d + %d + %d = %d ", dia, mes, any, dia + mes + any);
+	if (any < 1000 || any>2026) {
+		printf("La fecha no es valida");
+	}
+	else {
+		printf("\n%d + %d + %d = %d ", dia, mes, any, dia + mes + any);
+	}
 
 }
